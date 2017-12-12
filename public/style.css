@@ -15,7 +15,7 @@ body {
   width: 32vw;
   margin: 1.5vw 2vw 1.5vw 2vw;
   background-color: lightgrey;
-  border: .5vw solid grey;
+  border: .5vw solid;
   border-color: grey white white grey;
   border-radius: 1vw;
   text-align: center;
@@ -29,9 +29,40 @@ a {
 h1 {
   font-size: 5vw;
 }
+h2 {
+  font-size: 4vw;
+}
 h3 {
   font-size: 3vw;
 }
 h4 {
   font-size: 2vw;
+}
+
+.ratings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.rating {
+  background-color: pink;
+  margin: 1vw 1vw 1vw 1vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-size: 2vw;
+  border: .25vw solid purple;
+}
+
+input,
+button {
+  font-size: 2vw;
+  border-radius: .5vw;
+  margin: 1vw;
+  text-align: center;
+}
+
+button {
+  border: .25vw solid;
+  border-color: pink grey grey pink;
 }

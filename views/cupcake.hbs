@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>Vote For A Cupcake</title>
+  </head>
+  <body>
+    <div class="cupcakes">
+      <div class="cupcake">
+        <h2>{{cupcake.name}}</h2>
+        <h4>Baker: {{cupcake.baker}}</h4>
+        <div class="ratings">
+          {{#each cupcake.ratings}}
+            <span class="rating">{{this}}</span>
+          {{/each}}
+        </div>
+        <h4>Average Rating: {{cupcake.averageRating}}</h4>
+        <form action="/cupcakes/ratings/{{cupcake.id}}" method="post">
+          <input type="number" name="vote" min="1" max="5" value="3">
+          <button>VOTE!</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

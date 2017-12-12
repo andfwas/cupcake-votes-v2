@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  <title>Cupcakes</title>
+</head>
+
+<body>
+  <h1 style="text-align: center">Cupcakes</h1>
+  <div class="cupcakes">
+    {{#each cupcakes}}
+    <a href="/cupcakes/{{this.id}}">
+      <div class="cupcake">
+        <h3>{{this.name}}</h3>
+        <h4>Baker: {{this.baker}}</h4>
+        <h4>Rating: {{this.averageRating}}</h4>
+      </div>
+    </a>
+    {{/each}}
+  </div>
+</body>
+
+</html>

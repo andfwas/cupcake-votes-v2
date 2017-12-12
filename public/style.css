@@ -1,0 +1,37 @@
+body {
+  font-family: 'Pangolin', sans-serif;
+}
+
+.cupcakes {
+  border-radius: 1vw;
+  display: flex;
+  flex-flow: row;
+  background-color: lightblue;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cupcake {
+  width: 32vw;
+  margin: 1.5vw 2vw 1.5vw 2vw;
+  background-color: lightgrey;
+  border: .5vw solid grey;
+  border-color: grey white white grey;
+  border-radius: 1vw;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 5vw;
+}
+h3 {
+  font-size: 3vw;
+}
+h4 {
+  font-size: 2vw;
+}
